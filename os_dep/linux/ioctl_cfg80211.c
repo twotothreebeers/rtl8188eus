@@ -1150,7 +1150,7 @@ check_bss:
                                 , pmlmepriv->assoc_req_len - sizeof(struct rtw_ieee80211_hdr_3addr) - 2
                                 , pmlmepriv->assoc_rsp + sizeof(struct rtw_ieee80211_hdr_3addr) + 6
                                 , pmlmepriv->assoc_rsp_len - sizeof(struct rtw_ieee80211_hdr_3addr) - 6
-                                , WLAN_STATUS_SUCCESS, GFP_ATOMIC, NL80211_TIMEOUT_UNSPECIFIED);
+                                , WLAN_STATUS_SUCCESS, GFP_ATOMIC);
                 }
 		#if defined(RHEL79) && (LINUX_VERSION_CODE < KERNEL_VERSION(3, 11, 0) || defined(COMPAT_KERNEL_RELEASE))
 		RTW_INFO("pwdev->sme_state(a)=%d\n", pwdev->sme_state);
